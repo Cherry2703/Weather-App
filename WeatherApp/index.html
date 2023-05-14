@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b3e51dcfef.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather_header">
+            <form class="weather_search">
+                <input type="search" id="searchInput" placeholder="search here...." class="weather_serach_form" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="weather_units"><span class="weather_units_celicious">&#176C</span><span class="weather_units_farenheit">&#176F</span></div>
+        </div>
+        <div class="weather_body">
+            <h1 class="weather_city" id="searchInputValue">Hyderabad</h1>
+            <div class="weather_datetime">
+                <div class="time" id="time">12:30 <span class="am-pm" id="am-pm">AM</span></div>
+                <div class="date" id="date">Monday, 24 May</div>
+            </div>
+            <div class="weather_forecast">
+                <p id="weather_condition">clear</p>
+            </div>
+            <div class="weather_icons" id="weather_icons">
+
+            </div>
+            <p class="weather_temparature"><span id="weather_temparature">12</span>&#176C</p>
+            <div class="weather_min_max">
+                <p>Min:<span id="minimum_temp">35</span>&#176C</p>
+                <p>Max:<span id="maximum_temp">38</span>&#176C</p>
+            </div>
+        </div>
+        <div class="weather_info">
+            <div class="weather_card">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <div>
+                    <p>Real Feel</p>
+                    <p class="weather_realfeel"><span id="realfeellike">32</span>&#176C</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weather_humidity"><span id="humidity">20</span> g.mcube</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="weather_wind"><span id="wind_speed">19</span> mph</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="weather_pressure"><span id="weather_pressure">18</span> F/A</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
